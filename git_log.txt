@@ -1,0 +1,10 @@
+4960e20 feat(ui): Add Edit and Delete CRUD operations for Admin Role
+59aa666 feat(security): Implement strict backend method-level Role Based Access Control
+b95768f docs: Add Mermaid Architecture Flow Diagrams to Readmes
+91ca645 docs: Detail Backend & Frontend architecture mapping to Evaluation Criteria
+764bc02 feat(final): Add complete React frontend UI, Global Exception Handler, and final Architecture Documentation
+b535321 feat: Implement business logic and expose REST Controllers
+3cb9b21 feat(phase-3): Implement secure JWT authentication and login APIs
+4c5127a feat(phase-2): Create User and FinancialRecord domain entities
+d8e4bd8 feat(phase-1): Initialize Spring Boot backend with MySQL config
+db702d9 docs: Initial project architecture and implementation plan
