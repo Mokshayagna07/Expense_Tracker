@@ -23,6 +23,9 @@ public class FinancialRecord {
     private Long id;
 
     @Column(nullable = false)
+    private Long userId;
+
+    @Column(nullable = false)
     private BigDecimal amount;
 
     @Enumerated(EnumType.STRING)

@@ -8,10 +8,12 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Repository
 public interface FinancialRecordRepository extends JpaRepository<FinancialRecord, Long> {
+    List<FinancialRecord> findByUserId(Long userId);
 
-    @Query("SELECT COALESCE(SUM(f.amount), 0) FROM FinancialRecord f WHERE f.type = :type")
-    BigDecimal getTotalByType(@Param("type") RecordType type);
+    @Query("SELECT COALESCE(SUM(f.amount), 0) FROM FinancialRecord f WHERE f.type = :type AND f.userId = :userId")
+    BigDecimal getTotalByTypeAndUserId(@Param("type") RecordType type, @Param("userId") Long userId);
 }
