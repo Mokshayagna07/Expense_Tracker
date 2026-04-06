@@ -4,6 +4,7 @@ import { Mail, Lock, User, Wallet, ArrowRight } from 'lucide-react';
 import api from '../api';
 
 export default function Auth() {
+  const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(true);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

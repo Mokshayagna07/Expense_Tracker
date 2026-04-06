@@ -33,7 +33,7 @@ export default function Summary() {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-slate-800">Expense Breakdown</h2>
+      <h2 className="text-white">Expense Breakdown</h2>
       
       <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm max-w-2xl">
         <h3 className="font-semibold text-slate-700 mb-6">Category Distribution (Expenses)</h3>
