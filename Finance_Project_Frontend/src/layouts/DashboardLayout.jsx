@@ -79,9 +79,6 @@ export default function DashboardLayout() {
           </div>
         </header>
 
-          </div>
-        </header>
-
         {/* Scrollable Page Content */}
         <main className="flex-1 overflow-auto p-8">
           <Outlet />
